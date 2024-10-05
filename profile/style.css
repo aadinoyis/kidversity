@@ -1,0 +1,135 @@
+body {
+  background: #fff;
+}
+
+main {
+  padding: 0;
+  height: auto;
+}
+
+p {
+  font-size: 12px;
+}
+
+section {
+  padding: 2rem;
+}
+
+section.personal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 4px;
+}
+
+section.personal svg {
+  fill: var(--gold);
+}
+
+.btn-text {
+  color: var(--gold);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+header h2 {
+  font-size: 1.3rem;
+}
+
+figure {
+  --size: 96px;
+  width: var(--size);
+  height: var(--size);
+  min-width: var(--size);
+  min-height: var(--size);
+  flex-shrink: 0;
+  border: 1px solid grey;
+  background: lightgrey;
+  border-radius: 50%;
+}
+
+figure img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.personalize h5 {
+  margin-bottom: 12px;
+  font-size: 12px;
+}
+
+.board {
+  border: 2px solid lightgrey;
+  padding: 8px;
+  /* box-shadow: 0 3px 3px lightgrey; */
+  border-radius: 6px;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.board li {
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 0;
+}
+
+.board > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 0;
+}
+
+.board > div:nth-of-type(2) {
+  padding-top: 8px;
+  border-top: 1px solid lightgrey;
+}
+
+.green {
+  background: #F6FFF6;
+}
+
+.green .status {
+  color: #46A946;
+}
+
+.yellow {
+  background: #FFFFF2;
+}
+
+.yellow .status {
+  color: #CCCC35;
+}
+
+.red {
+  background: #FFECEC;
+}
+
+.red .status {
+  color: #BB5151;
+}
+
+.blue {
+  background: #F3F3FF;
+}
+
+.blue .status {
+  color: #3939A4;
+}

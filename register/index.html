@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Teacher</title>
+  <link rel="stylesheet" href="/global.css">
+  <script src="auth.js"></script>
+</head>
+
+<body>
+  <main class="screen-reg">
+    <div class="form" onsubmit="e=>e.preventDefault()">
+      <div class="input_group">
+        <label for="full_name">Full Name</label>
+        <input type="text" name="full_name" id="full_name" placeholder="e.g Muhammed Abdullah">
+      </div>
+      
+      <div class="input_group">
+        <label for="email_address">Email</label>
+        <input type="email" name="email_address" id="email_address" placeholder="niceemail@gmail.com">
+      </div>
+      
+      <div class="input_group">
+        <label for="phone_number">Phone Number</label>
+        <input type="tell" name="phone_number" id="phone_number" placeholder="+2341234567">
+      </div>
+      
+      <div class="input_group">
+        <label for="nationality">Nationality</label>
+        <input type="text" name="nationality" id="nationality" placeholder="Nigeria">
+      </div>
+      
+      <div class="input_group">
+        <label for="gender">Gender</label>
+        <input type="text" name="gender" id="gender" placeholder="Male">
+      </div>
+      
+      <div class="input_group">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Create a password">
+      </div>
+      
+      <div class="input_group">
+        <label for="confirm_password">Confirm Password</label>
+        <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm your password">
+      </div>
+      
+      <div class="input_group" style="text-align: center; margin-top: 2rem">
+        <label>Sign Up With</label>
+        <div class="auth0">
+          <img src="/public/icons/google_icon.png" alt="google_icon">
+          <img src="/public/icons/apple_icon.png" alt="apple_icon">
+          <img src="/public/icons/facebook_icon.png" alt="facebook_icon">
+        </div>
+      </div>
+      
+      <div class="group">
+        <button class="pri-btn" onclick="createUser()">Sign Up</button>
+      
+        <p>Are you registered? <a href="/login" class="text-link">login</a></p>
+      </div>
+
+      <!-- <a href="/dashboard"></a> -->
+    </div>
+  </main>
+
+</body>
+
+</html>

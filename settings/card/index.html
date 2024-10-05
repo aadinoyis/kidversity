@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome</title>
+  <link rel="stylesheet" href="/global.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="screen-dashboard">
+    <header>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><g id="_01_align_center" data-name="01 align center"><path d="M16.752,23.994,6.879,14.121a3,3,0,0,1,0-4.242L16.746.012,18.16,1.426,8.293,11.293a1,1,0,0,0,0,1.414l9.873,9.873Z"/></g></svg>
+      <h5>
+        Add card
+      </h5>
+    </header>
+    <section class="card_details">
+      <h4>Add Card</h4>
+      <p>
+        Streamline your payment by adding your card for future transactions. Your card information is secured with advanced encryption technology.
+      </p>
+      <br>
+
+      <div class="form" onsubmit="e=>e.preventDefault()">
+        <div class="input_group">
+          <label for="card_number">Card Number</label>
+          <input type="number" name="card_number" id="card_number" placeholder="0000 0000 0000 0000">
+        </div>
+  
+        <div class="input_group">
+          <label for="exp_date">Expiry Date</label>
+          <input type="text" name="exp_date" id="exp_date" placeholder="MM/YY">
+        </div>
+  
+        <div class="input_group">
+          <label for="cvv">CVV/CVC</label>
+          <input type="number" name="cvv" id="cvv" placeholder="Create a password">
+        </div>
+  
+        <div class="input_group">
+          <label for="holder_name">Card holder's Full Name</label>
+          <input type="text" name="holder_name" id="holder_name" placeholder="Card holder's Full Name">
+        </div>
+  
+      </div>
+    </section>
+    <div class="group">
+      <a href="/users">
+        <button class="pri-btn">Add Card</button>
+      </a>
+    </div>
+  </main>
+</body>
+
+</html>
